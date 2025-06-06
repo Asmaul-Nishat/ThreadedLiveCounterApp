@@ -18,31 +18,19 @@ A simple JavaFX desktop application that demonstrates multithreading, live UI up
 🛠 Technologies Used
 
     Java 17+
-
     JavaFX
-
     FXML (designed in Scene Builder)
-
     IntelliJ IDEA
-
     Git for version control
 
 🚀 Getting Started
 
     Clone the repo:
+    git clone https://github.com/Asmaul-Nishat/ThreadedLiveCounterApp.git
 
-    git clone https://github.com/your-username/ThreadedLiveCounterApp.git
-
-    Open in IntelliJ:
-
-        File → Open → Select the project folder
-
-    Run the app:
-
-        Run the Main class (with JavaFX set up)
+    click: [ThreadedLiveCounterApp Repository](https://github.com/your-username/ThreadedLiveCounterApp)
 
 📂 Project Structure
-
 src/
 ├── com.example.threadedlivecounter
 │   ├── LiveCounterController.java
@@ -52,19 +40,7 @@ src/
 📌 Learning Objectives
 
 This app is a beginner-friendly introduction to:
-
     JavaFX UI development
-
     Working with threads in Java
-
     Safely updating UI from background threads (Platform.runLater)
-
     Event-driven programming (buttons, text inputs, etc.)
-
-📄 License
-
-You can add an open-source license like MIT if you'd like. To add a license file on GitHub:
-
-    Go to your repo → Add file → Create new file → Name it LICENSE
-
-    Choose a template (MIT is common)
