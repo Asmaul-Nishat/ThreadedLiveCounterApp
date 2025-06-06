@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.threadedlivecounter.LiveCounterController">
    <children>
-      <Button layoutX="358.0" layoutY="200.0" mnemonicParsing="false" onAction="#submitButtonOnAction" text="submit" />
-      <Label layoutX="99.0" layoutY="170.0" prefHeight="18.0" prefWidth="145.0" text="Update label after every" />
-      <TextField fx:id="inputTextField" layoutX="98.0" layoutY="200.0" />
-      <Label layoutX="99.0" layoutY="226.0" prefHeight="18.0" prefWidth="145.0" text="miliseconds" />
-      <Label fx:id="updateCounterTextField" layoutX="205.0" layoutY="90.0" prefHeight="33.0" prefWidth="170.0" />
+      <Button layoutX="366.0" layoutY="195.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="34.0" prefWidth="111.0" text="Update">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="99.0" layoutY="170.0" prefHeight="26.0" prefWidth="159.0" text="Update label after every">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="inputTextField" layoutX="98.0" layoutY="199.0" prefHeight="26.0" prefWidth="150.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></TextField>
+      <Label layoutX="100.0" layoutY="233.0" prefHeight="18.0" prefWidth="146.0" text="miliseconds">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="updateCounterTextField" layoutX="196.0" layoutY="78.0" prefHeight="68.0" prefWidth="225.0" textFill="#1b0379">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font></Label>
    </children>
 </AnchorPane>
