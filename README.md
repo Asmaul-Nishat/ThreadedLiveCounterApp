@@ -38,10 +38,12 @@ src/
 
 📌 Learning Objectives
 
-JavaFX UI development
+This app is a beginner-friendly introduction to:
 
-Working with threads in Java
+    JavaFX UI development
 
-Safely updating UI from background threads (Platform.runLater)
+    Working with threads in Java
 
-Event-driven programming (buttons, text inputs, etc.)
+    Safely updating UI from background threads (Platform.runLater)
+
+    Event-driven programming (buttons, text inputs, etc.)
