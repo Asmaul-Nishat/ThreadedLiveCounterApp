@@ -28,8 +28,8 @@ A simple JavaFX desktop application that demonstrates multithreading, live UI up
     Clone the repo:
     git clone https://github.com/Asmaul-Nishat/ThreadedLiveCounterApp.git
 
-
 📂 Project Structure
+
 src/
 ├── com.example.threadedlivecounter
 │   ├── LiveCounterController.java
