@@ -39,5 +39,16 @@
          <font>
             <Font name="Arial Bold" size="21.0" />
          </font></Label>
+      <Button layoutX="244.0" layoutY="289.0" mnemonicParsing="false" onAction="#pauseButtonOnAction" prefHeight="34.0" prefWidth="111.0" text="Pause" textFill="#e43838">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

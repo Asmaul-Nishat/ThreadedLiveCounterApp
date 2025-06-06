@@ -16,13 +16,16 @@ public class LiveCounterController {
 
     private volatile long counter = 0;
     private Thread displayThread;
+    private volatile boolean paused = false; // New pause flag
 
     @FXML
     public void initialize() {
         // Fast counter increment thread
         Thread incrementThread = new Thread(() -> {
             while (true) {
-                counter++;
+                if (!paused) {
+                    counter++;
+                }
                 try {
                     Thread.sleep(1);
                 } catch (InterruptedException e) {
@@ -67,5 +70,11 @@ public class LiveCounterController {
 
         displayThread.setDaemon(true);
         displayThread.start();
+    }
+
+    @FXML
+    public void pauseButtonOnAction(ActionEvent actionEvent) {
+        paused = !paused; // Toggle pause/resume
+        System.out.println(paused ? "Paused" : "Resumed");
     }
 }
