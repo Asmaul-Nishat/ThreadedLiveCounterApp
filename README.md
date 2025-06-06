@@ -28,7 +28,6 @@ A simple JavaFX desktop application that demonstrates multithreading, live UI up
     Clone the repo:
     git clone https://github.com/Asmaul-Nishat/ThreadedLiveCounterApp.git
 
-    click: [ThreadedLiveCounterApp Repository](https://github.com/your-username/ThreadedLiveCounterApp)
 
 📂 Project Structure
 src/
@@ -39,8 +38,10 @@ src/
 
 📌 Learning Objectives
 
-This app is a beginner-friendly introduction to:
-    JavaFX UI development
-    Working with threads in Java
-    Safely updating UI from background threads (Platform.runLater)
-    Event-driven programming (buttons, text inputs, etc.)
+JavaFX UI development
+
+Working with threads in Java
+
+Safely updating UI from background threads (Platform.runLater)
+
+Event-driven programming (buttons, text inputs, etc.)
