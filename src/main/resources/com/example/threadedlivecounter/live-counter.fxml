@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.threadedlivecounter.LiveCounterController">
+<AnchorPane prefHeight="446.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.threadedlivecounter.LiveCounterController">
    <children>
       <Button layoutX="366.0" layoutY="195.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="34.0" prefWidth="111.0" text="Update">
          <effect>
@@ -39,7 +39,18 @@
          <font>
             <Font name="Arial Bold" size="21.0" />
          </font></Label>
-      <Button layoutX="244.0" layoutY="289.0" mnemonicParsing="false" onAction="#pauseButtonOnAction" prefHeight="34.0" prefWidth="111.0" text="Pause" textFill="#e43838">
+      <Button layoutX="325.0" layoutY="297.0" mnemonicParsing="false" onAction="#pauseButtonOnAction" prefHeight="26.0" prefWidth="111.0" text="Pause" textFill="#e43838">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="146.0" layoutY="297.0" mnemonicParsing="false" onAction="#resetButtonOnAction" prefHeight="26.0" prefWidth="111.0" text="Reset" textFill="#0fb13d">
          <effect>
             <Glow level="0.0" />
          </effect>

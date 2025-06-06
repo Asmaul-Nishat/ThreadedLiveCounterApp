@@ -77,4 +77,11 @@ public class LiveCounterController {
         paused = !paused; // Toggle pause/resume
         System.out.println(paused ? "Paused" : "Resumed");
     }
+
+    @FXML
+    public void resetButtonOnAction(ActionEvent actionEvent) {
+        counter = 0; // Reset the counter value
+
+        Platform.runLater(() -> updateCounterTextField.setText("Counter: " + counter));
+    }
 }
